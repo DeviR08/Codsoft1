@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devi R | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://static.vecteezy.com/system/resources/thumbnails/008/968/741/small_2x/multi-layers-yellow-blue-dark-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      position: relative;
+      z-index: 0;
+    }
+
+    /* Brighter Overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255, 255, 255, 0.3); /* less white = brighter */
+      backdrop-filter: brightness(1.1);     /* brighten background image */
+      z-index: -1;
+    }
+
+    .header {
+      text-align: center;
+      background: linear-gradient(90deg, rgba(67, 51, 190, 0.8) 0%, rgba(87, 199, 133, 1) 50%, rgba(40, 64, 195, 0.816) 100%);
+      color: white;
+      padding: 40px 20px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-style: italic;
+      font-size: 1.1em;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .section {
+      background: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .section h2 {
+      color: #4e54c8;
+      margin-bottom: 20px;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skills-list li {
+      background-color: #4e54c8;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-size: 0.95em;
+      transition: 0.3s ease;
+    }
+
+    .skills-list li:hover {
+      background-color: #8f94fb;
+    }
+
+    .project-card {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .project-card img {
+      width: 700px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .button {
+      background: #4e54c8;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background: #6c70e5;
+    }
+
+    .contact a {
+      color: #4e54c8;
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Devi R</h1>
+    <p class="tagline">Web Developer | Data Analysis | Tech Enthusiast</p>
+    <nav>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      
+      <p>
+        Hi! I'm an Enthusiastic BCA student with a strong foundation in web development and data analysis.
+        Skilled in HTML, CSS, JavaScript, and Excel. Passionate about building efficient web
+        solutions and eager to learn new technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills" id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python (Beginner)</li>
+      <li>MS Package</li>
+      <li>Zoho Books</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section class="section projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="Project 1 Img.jpeg" alt="Project 1">
+      <div>
+        <p><strong>Project Link:</strong> <a href=" https://devir08.github.io/CODSOFT/" target="_blank">Visit Site</a></p>
+        <h3><strong>Project Title:</strong> TechTrends – Smart Electronics Landing Page</h3>
+        <p>
+          <strong>Overview:</strong> TechTrends is a modern, responsive e-commerce landing page designed to showcase and sell the latest electronic gadgets and accessories.
+          <br /><br />
+          <strong>Features:</strong><br />
+          Responsive design, categorized products, toggle functionality, real-time cart, secure checkout.<br/> <strong>Navigation Header:</strong>A simple, responsive navbar with links to Home, Products, About, and Contact for easy site navigation.<br/>
+<p><strong>Hero Section:</strong>Features a bold headline and a "Shop Now" button to draw users into exploring products. <br/>
+<strong>Category Toggle:</strong>Users can switch between categories like Smart Gadgets, Mobile Accessories, Computing Devices, and Smart Home Devices.
+ <br/>
+<strong>Product Cards:</strong>Displays product image, name, price, and an "Add to Cart" button in a clean card layout.
+ <br/>
+<strong>Shopping Cart:
+</strong>Updates in real-time with item list, quantity, and total price. Includes option to remove items.<br/> 
+<strong>JavaScript Interactivity:</strong>Handles category filtering, cart updates, and calculations without reloading the page.<br/>
+<strong>Clean Styling:</strong>Simple CSS layout that is responsive and user-friendly across all devices.
+</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="proj 2 img.jpeg" alt="Project 2" width="800" height="300"/>
+      <div>
+        <p><strong>Project Link:</strong> <a href="https://devir08.github.io/codsoft1/" target="_blank">Visit Site</a></p>
+        <h3><strong>Project Title:</strong> Personal Protofolio</h3>
+        <p><strong>Overview:</strong> This is a clean and responsive personal portfolio website designed to showcase my skills, projects, and resume.</p><br/>
+        <strong>Features:</strong><br />
+        <p><strong>Responsive Layout: </strong>Optimized for various screen sizes from desktops to mobiles, ensuring a seamless user experience.<br/>
+<strong>Hero Section: </strong> A professional introduction with name, title, and a tagline that highlights core expertise areas.
+ <br/>
+<strong>Navigation Bar:</strong>Sticky and scrollable navbar for easy access to different sections like About, Skills, Projects, Resume, and Contact.
+ <br/>
+<strong>About Section: 
+</strong>A brief summary of my background, education, and tech interests.
+
+<br/> 
+<strong>Skills Showcase:</strong>Listed technical skills like HTML5, CSS, JavaScript, Python (Beginner), MS Package, and Zoho Books, displayed as interactive tags.
+
+<br/>
+<strong>Project Gallery:</strong><br/><strong>TechTrends – Smart Electronics Landing Page: </strong>A feature-rich e-commerce product page showcasing smart gadgets with category toggles and an interactive shopping cart.<br/>
+<strong>Personal Portfolio:</strong>A clean landing page that demonstrates design aesthetics and responsive layout capabilities.<br/>
+<strong>Downloadable Resume:</strong> Button to download a resume in PDF format.<br/>
+<strong>Contact Section: </strong> Includes direct email, phone number, and LinkedIn link for connectivity.<br/>
+<strong>Background & Visuals: </strong>Stylish gradient overlays, background image with soft brightness filter, and paper-cut 3D textures add depth and professionalism.<br/>
+</p>
+
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section class="section resume" id="resume">
+    <h2>Resume</h2>
+    <p><a href="DEVI RESUME.pdf" download class="button">Download Resume (PDF)</a></p>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:deviragu005@gmail.com">deviragu005@gmail.com</a></p>
+    <p>Phone: 9566087564</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/devi-r-6b9b13342" target="_blank">linkedin.com/in/devi-r-6b9b13342</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Devi R. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
